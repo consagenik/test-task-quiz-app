@@ -6,21 +6,27 @@ import ApiQuestion from "./entities/ApiQuestion";
 export const quizzes: ApiQuiz[] = [
   {
     id: 1,
-    // Write name for quiz about React JS
+    userId: 1,
     name: 'React JS quiz',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a turpis ut leo accumsan venenatis porta commodo ipsum. Pellentesque interdum leo enim, in vulputate orci vehicula sed. Aliquam consequat, nulla eu ultricies tincidunt, risus nibh venenatis arcu, auctor commodo sem quam et ligula. Donec ornare nisi at rutrum pellentesque. Sed et urna sit amet ante ultricies tincidunt nec nec massa. Duis tristique elit ac nisi dignissim, id tempus est venenatis. Aenean vestibulum faucibus tortor, ut iaculis odio consequat sit amet. Quisque et nibh suscipit, bibendum ante quis, vehicula velit. In tempus mollis enim, at vehicula eros eleifend eu. Aliquam vitae.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a turpis ut leo accumsan venenatis porta commodo ipsum. Pellentesque interdum leo enim, in vulputate orci vehicula sed. Aliquam consequat, nulla eu ultricies tincidunt, risus nibh venenatis arcu, auctor commodo sem quam et ligula. Donec ornare nisi at rutrum pellentesque. Sed et urna sit amet ante ultricies tincidunt nec nec massa. Duis tristique elit ac nisi dignissim, id tempus est venenatis. Aenean vestibulum faucibus tortor, ut iaculis odio consequat sit amet.',
+    questionsQuantity: 3,
+    time: 3
   },
   {
     id: 2,
-    name: 'NextJS',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum malesuada urna, tempor rutrum est laoreet at. Proin egestas leo eros, vitae accumsan leo elementum finibus. Ut et ultrices tortor, at molestie risus. Nam ut ligula luctus, aliquam dui non, vulputate diam. Phasellus pellentesque pulvinar nulla sed venenatis. Nulla mattis viverra fringilla. Vestibulum sed metus sed sapien volutpat dignissim.\n' +
-      '\n' +
-      'Aenean maximus rutrum ipsum. Quisque diam ex, auctor id dapibus vel, fringilla eu metus. Vestibulum vel justo porta, vehicula tellus vel.',
+    userId: 2,
+    name: 'NextJS quiz',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum malesuada urna, tempor rutrum est laoreet at. Proin egestas leo eros, vitae accumsan leo elementum finibus. Ut et ultrices tortor, at molestie risus. Nam ut ligula luctus, aliquam dui non, vulputate diam. Phasellus pellentesque pulvinar nulla sed venenatis. Nulla mattis viverra fringilla. Vestibulum sed metus sed sapien volutpat dignissim.',
+    questionsQuantity: 3,
+    time: 3
   },
   {
     id: 3,
-    name: 'React Native',
+    userId: 1,
+    name: 'React Native quiz',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae ipsum vulputate quam vulputate vestibulum ac sit amet velit. Fusce eu arcu nec lectus aliquam tempus eget non est. Sed vitae vestibulum risus. Donec gravida dolor vitae urna sodales vestibulum. Aliquam semper, lectus nec lacinia pulvinar, ligula felis rutrum ipsum, in mattis ligula nisi nec lacus. Phasellus nisl lorem, consectetur.',
+    questionsQuantity: 3,
+    time: 3
   },
 ]
 
@@ -30,6 +36,7 @@ export const quizQuestions: ApiQuestion[] = [
     quizId: 1,
     name: 'Question 1',
     type: 'selectOne',
+    time: 1,
     answers: [
       {
         id: 1,
@@ -54,6 +61,7 @@ export const quizQuestions: ApiQuestion[] = [
     quizId: 1,
     name: 'Question 2',
     type: 'selectMany',
+    time: 1.5,
     answers: [
       {
         id: 5,
@@ -77,13 +85,15 @@ export const quizQuestions: ApiQuestion[] = [
     id: 3,
     quizId: 1,
     name: 'Question 3',
-    type: 'text'
+    type: 'text',
+    time: 1,
   },
   {
     id: 11,
     quizId: 2,
     name: 'Question 1',
     type: 'selectOne',
+    time: 1,
     answers: [
       {
         id: 11,
@@ -108,6 +118,7 @@ export const quizQuestions: ApiQuestion[] = [
     quizId: 2,
     name: 'Question 2',
     type: 'selectMany',
+    time: 1.5,
     answers: [
       {
         id: 15,
@@ -131,13 +142,15 @@ export const quizQuestions: ApiQuestion[] = [
     id: 13,
     quizId: 2,
     name: 'Question 3',
-    type: 'text'
+    type: 'text',
+    time: 1,
   },
   {
     id: 21,
     quizId: 3,
     name: 'Question 1',
     type: 'selectOne',
+    time: 1,
     answers: [
       {
         id: 21,
@@ -162,6 +175,7 @@ export const quizQuestions: ApiQuestion[] = [
     quizId: 3,
     name: 'Question 2',
     type: 'selectMany',
+    time: 1.5,
     answers: [
       {
         id: 25,
@@ -185,7 +199,8 @@ export const quizQuestions: ApiQuestion[] = [
     id: 23,
     quizId: 3,
     name: 'Question 3',
-    type: 'text'
+    type: 'text',
+    time: 1,
   }
 ]
 

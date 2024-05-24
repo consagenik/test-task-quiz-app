@@ -1,4 +1,7 @@
 export default interface ApiQuizCreateRequest {
-  name: string;
-  description: string;
+  userId: number
+  name: string
+  description: string
+  questionsQuantity: number
+  time: number
 }

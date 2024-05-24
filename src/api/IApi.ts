@@ -6,7 +6,8 @@ import ApiQuestion from "./entities/ApiQuestion";
 
 export default interface IApi {
   getQuiz(id: number): Promise<ApiQuiz>;
-  getQuizzes(): Promise<ApiQuiz[]>;
+  getAllQuizzes(): Promise<ApiQuiz[]>;
+  getUserQuizzes(userId: number): Promise<ApiQuiz[]>;
   createQuiz(quiz: ApiQuizCreateRequest): Promise<ApiQuiz>;
   updateQuiz(id: number, quiz: ApiQuiz): Promise<ApiQuiz>;
   deleteQuiz(id: number): Promise<null>;
